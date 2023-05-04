@@ -24,12 +24,17 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-autoconfigure:2.7.11")
     implementation("org.springframework.boot:spring-boot-starter:2.7.11")
 
+    // Data Access
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.7.11")
+    implementation("org.postgresql:postgresql:42.3.8")
+
     // Google Cloud Storage
     implementation(platform("com.google.cloud:libraries-bom:26.12.0"))
     implementation("com.google.cloud:google-cloud-storage")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test:2.7.11")
     testImplementation("org.testcontainers:testcontainers:1.16.3")
+    testImplementation("org.testcontainers:postgresql:1.16.3")
 }
 
 tasks.withType<Test> {

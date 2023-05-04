@@ -25,4 +25,4 @@ jobs:
         uses: gradle/gradle-build-action@v2
       
       - name: Run test
-        run: gradle test
+        run: gradle test --info

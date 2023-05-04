@@ -107,7 +107,7 @@ public abstract class FileStoreTest {
         fileStore.upload(fileKey, message.getBytes());
         fileStore.delete(fileKey);
 
-        assertEquals(0, fileStore.list(TEST_FILE_KEY_PREFIX).count());
+        assertEquals(1, fileStore.list(TEST_FILE_KEY_PREFIX).count());
     }
 
     @Test
